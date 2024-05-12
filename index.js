@@ -89,7 +89,7 @@ function makeSound(key) {
             tom4.play();
             break;
     
-    default: console.log(buttonInnerHTML);
+    default: console.log(key);
     
     }; 
 }
