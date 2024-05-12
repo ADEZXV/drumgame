@@ -18,9 +18,9 @@ alert("I got clicked MOFOS");
 // ADDING EVENT LISTENER for detecting button press
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
-for (var i = 0; i<numberOfDrumButtons; i++) {
+for (var i = 0; i < numberOfDrumButtons; i++) {
 
-document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+document.querySelectorAll(".drum")[i].addEventListener("click", function() {
    //this.style.color = "white";
     var buttonInnerHTML = this.innerHTML;
 
@@ -46,6 +46,7 @@ document.addEventListener("keydown", function(event) {
     buttonAnimation(event.key);
 
  });
+
 
 function makeSound(key) {
 
@@ -89,9 +90,10 @@ function makeSound(key) {
             tom4.play();
             break;
     
+
     default: console.log(key);
     
-    }; 
+    } 
 }
 
 // adding a class to an active pressed button so It can work with JS animations
@@ -104,14 +106,11 @@ activeButton.classList.add("pressed");
 // release the PRESSED button after 100ms
 setTimeout(function() {
     activeButton.classList.remove("pressed");
-
 }, 100);
 
 }
 
     
-    
- 
-// funcion para reproducir los audios por medio del "keydown"
 
- 
+
+// funcion para reproducir los audios por medio del "keydown"
